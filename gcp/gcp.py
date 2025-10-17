@@ -11,12 +11,12 @@ def hello_http(request):
     data = request.get_json(silent=True) or {}
     args = request.args or {}
 
-    fasting_glucose = data.get("fasting glucose", args.get("fasting glucose"))
+    fasting_glucose = data.get("fasting-glucose", args.get("fasting-glucose"))
 
     # Presence check
     if fasting_glucose is None:
         return (
-            json.dumps({"error": "Fasting glucose' is required."}),
+            json.dumps({"error": "fasting=glucose' is required."}),
             400,
             {"Content-Type": "application/json"},
         )
@@ -26,7 +26,7 @@ def hello_http(request):
         fg_val = float(fasting_glucose)
     except (TypeError, ValueError):
         return (
-            json.dumps({"error": "'Fasting glucose' must be numbers."}),
+            json.dumps({"error": "'fasting-glucose' must be numbers."}),
             400,
             {"Content-Type": "application/json"},
         )
@@ -43,7 +43,7 @@ def hello_http(request):
         category = "Abnormal"
 
     payload = {
-        "fasting glucose": fg_val,
+        "fasting-glucose": fg_val,
         "status": status,
         "category": category,
     }

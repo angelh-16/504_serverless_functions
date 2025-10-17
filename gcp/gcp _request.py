@@ -1,12 +1,11 @@
-
 import requests, json, sys
 
-url = "https://python-fg-504-382156928436.europe-west1.run.app"
+url = "https://python-fg-504-382156928436.europe-west1.run.app/"
 
-def test(input):
+def test(payload):
     try:
-        print(f"\n Input: {input}")
-        r = requests.post(url, json=input, timeout=10)
+        print(f"\n Input: {payload}")
+        r = requests.post(url, json=payload, timeout=10)
         print(r.status_code, r.json())
     except Exception as e:
         print("Error:", e)
