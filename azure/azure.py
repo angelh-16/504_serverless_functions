@@ -21,20 +21,17 @@ def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
     if fg is not None:
         try:
             fg_val = float(fg)
-            
-            status = "Normal" if (fg_val < 100) else "Abnormal"
-
             if fg_val < 100:
-                results = "Normal (< 100 mg/dL)"
+                results = "fasting-glucose: " + fg + " status: Normal category: Normal (< 100 mg/dL)"
             elif 100 <= fg_val <= 125:
-                results = "Prediabetes (100 to 125 mg/dL)"
+                results = "fasting-glucose: " + fg + " status: Abnormal category: Prediabetes (100 to 125 mg/dL)"
             elif fg_val >= 126:
-                results = "Diabetes (126 mg/dL or above)"
+                results = "fasting-glucose: " + fg + " status: Abnormal category: Diabetes (126 mg/dL or above)"
         except ValueError:
             results = f"Invalid input provided for fasting-glucose."
             status_code = 400
 
     return func.HttpResponse(
-        f"fasting-glucose: {fg_val} \nstatus: {status} \ncategory: {results}",
-        status_code=status_code
+         f"{results}",
+         status_code=status_code
     )
