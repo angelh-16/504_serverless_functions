@@ -31,7 +31,7 @@ def hello_http(request):
             {"Content-Type": "application/json"},
         )
 
-    status = "normal" if (fg_val < 100) else "abnormal"
+    status = "Normal" if (fg_val < 100) else "Abnormal"
 
     if fg_val < 100:
         category = "Normal (< 100 mg/dL)"
@@ -40,7 +40,7 @@ def hello_http(request):
     elif fg_val >= 126:
         category = "Diabetes 126 mg/dL or above"
     else:
-        category = "abnormal"
+        category = "Abnormal"
 
     payload = {
         "fasting glucose": fg_val,
