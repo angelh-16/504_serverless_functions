@@ -19,6 +19,7 @@ https://drive.google.com/file/d/1i2joUhzgeTR2hGk7HrUouEpyxIkpbWSn/view?usp=shari
 
 ## GCP:
 ### Endpoint URLs: https://python-fg-504-382156928436.europe-west1.run.app
+
 ### Steps to start before tutorial video:
 1. go to cloud run
 2. click "Deploy container"
@@ -29,11 +30,45 @@ https://drive.google.com/file/d/1i2joUhzgeTR2hGk7HrUouEpyxIkpbWSn/view?usp=shari
 7. check "Allow public access"
 8. put maximum scaling to 1
 9. click "Create" 
-![screenshot](images/ip.png)
+10. follow video
+![screenshot](gcp/images/gcp_test.png)
+
+### Results:
+normal:\
+![screenshot](gcp/images/gcp_web.png) \
+prediabetes:\
+![screenshot](gcp/images/gcp_web2.png)\
+diabetes:\
+![screenshot](gcp/images/gcp_web3.png)
+
 ## Azure:
 ### Endpoint URLs: https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net/api/http_trigger1?code=FEbB1pk85vfo7dTRI7vb0m_ZkCm3QjP8iFWdTSJyaq29AzFu4w1hOQ==
+
 ###  Steps to start before tutorial video:
 1. go to azure
-2. 
+2. click "Function App"
+3. click "Create"
+4. chose "Consumption"
+5. Subscription: Azure for students
+6. chose a resource group
+7. give the function a name
+8. pick "Python" for "Runtime stack" 
+9. click "Review + Create"
+10. click "Create"
+11. click "open to resource"
+12. click "Create function"
+13. chose "HTTP trigger"
+14. click "next" and then click "create"
+15. follow video
+![screenshot](azure/images/azure_test.png)
+
+### Results:
+normal:\
+![screenshot](azure/images/azure_web.png)\
+prediabetes:\
+![screenshot](azure/images/azure_web2.png)\
+diabetes:\
+![screenshot](azure/images/azure_web3.png)
+
 ## Compare:
-Google Cloud Platform (GCP) 
+I think both Google Cloud Platform (GCP) and Azure is pretty straightforward and easy to use. 
