@@ -18,9 +18,22 @@ Citation: https://my.clevelandclinic.org/health/diagnostics/21952-fasting-blood-
 https://drive.google.com/file/d/1i2joUhzgeTR2hGk7HrUouEpyxIkpbWSn/view?usp=sharing
 
 ## GCP:
-Endpoint URLs: https://python-fg-504-382156928436.europe-west1.run.app
-
+### Endpoint URLs: https://python-fg-504-382156928436.europe-west1.run.app
+### Steps to start before tutorial video:
+1. go to cloud run
+2. click "Deploy container"
+3. check "fuctions"
+4. give a server name
+5. choose a region
+6. change "Runtime" to "python 3.13"
+7. check "Allow public access"
+8. put maximum scaling to 1
+9. click "Create" 
+![screenshot](images/ip.png)
 ## Azure:
-Endpoint URLs: https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net/api/http_trigger1?code=FEbB1pk85vfo7dTRI7vb0m_ZkCm3QjP8iFWdTSJyaq29AzFu4w1hOQ==
-
+### Endpoint URLs: https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net/api/http_trigger1?code=FEbB1pk85vfo7dTRI7vb0m_ZkCm3QjP8iFWdTSJyaq29AzFu4w1hOQ==
+###  Steps to start before tutorial video:
+1. go to azure
+2. 
 ## Compare:
+Google Cloud Platform (GCP) 
