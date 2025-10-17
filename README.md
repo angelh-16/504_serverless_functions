@@ -21,6 +21,6 @@ Citation: https://my.clevelandclinic.org/health/diagnostics/21952-fasting-blood-
 Endpoint URLs: https://python-fg-504-382156928436.europe-west1.run.app
 
 ##Azure:
-Endpoint URLs: https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net ](https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net/api/http_trigger1?code=FEbB1pk85vfo7dTRI7vb0m_ZkCm3QjP8iFWdTSJyaq29AzFu4w1hOQ==
+Endpoint URLs: https://python-test-fg-cpeacta4ftfwgefu.canadacentral-01.azurewebsites.net/api/http_trigger1?code=FEbB1pk85vfo7dTRI7vb0m_ZkCm3QjP8iFWdTSJyaq29AzFu4w1hOQ==
 
 ##Compare:
